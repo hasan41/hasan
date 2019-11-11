@@ -1,15 +1,46 @@
+<!-- CSS Practice --> 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS</title>
+	<title>Hasan</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" href="http://askbuzz.gatech.edu/GeorgiaTech.png">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	 <!-- Bootstrap core CSS -->
     <link href="cheatsheet/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CleanBlog -->
+    <link href="css/style_cleanblog.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script> 
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<!-- Makes Projects HighLighted -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
 </head>
-<body>
 
+
+<body>
 	  <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -24,9 +55,9 @@
   	<center>
 <li><a href="#">Home</a></li>
 <li><a href="#">Projects</a></li>
-<li><a href="#">About</a></li>
+<li><a href="pages/page_2.html">Learn More</a></li>
 <li><a href="#">Contact</a></li>
-<li><a href="images/resume.pdf" target="_blank">Resume</a></li>
+<li><a href="images/r01.pdf" target="_blank">Resume</a></li>
 </center>
 </ul>
 </ul>
@@ -46,10 +77,42 @@
       </div>
     </header>
 
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">top<div class="glyphicon glyphicon-hand-up"></div></button> -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">top<div class="glyphicon glyphicon-hand-up"></div></button>
 
-<!-- Projects -->
+<!-- extra libraries-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<section class="content-section" id="portfolio">
+<!-- About page -->
+	<!-- <div class="container">
+	<div class="box-1">  
+	<h1> <div class="h1_css"> Hey, I'm Hasan </div></h1>
+	<p>Hasan is studying Computer Science as an undergraduate at Georgia State University, class of 2021. Aiming to get into Artificial Intelligence business growth as he is already working on some projects. His initial goal is to obtain an internship. He is selected for the Dean's List thrice and is in Honors college.</p>
+	</div>
+	<div class="box-2">  
+	<h1>Hello World</h1>
+	<p>Feel free to contact me :) <br> Ba bye!</br></p>
+		<a href="pages/page_2.html" class = "button" title="CLICK!"> Learn More</a>
+		</div> -->
+
+       <!-- About Section -->
+    <section class="text-white mb-0" id="about">
+      <div class="container" style="background-color: #00ba9c; border-radius: 10px">
+        <h2 class="text-center text-uppercase text-white">About</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead" style="text-align: center">Hasan Naseer is a diligent <strong style="color: #FFEDBC">STUDENT</strong> pursuing his bachelor’s in Computer Science. A passionate <strong style="color: #FFEDBC">LEADER</strong> in his work environment by managing the development of the Operation Hope website while simultaneously progressing in a notable research project. And an empathetic <strong style="color: #FFEDBC">FRIEND</strong> to anyone who wants a helping hand.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead" style="text-align: center">Hasan is currently pursing Software Engineer <strong style="color: #FFEDBC">Internship</strong> at Norfolk Southern. Starting his <strong style="color: #FFEDBC">Spring'20</strong> semseter at Georgia Institute of Technology. He has many future goals to accomplish and many projects to work on with the pursue of Undergraduate Degree from Georgia Tech in <strong style="color: #FFEDBC">2021</strong> </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+<!-- <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -68,7 +131,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/hasan41/QuizApp" target="_blank">
+            <a class="portfolio-item" href="oh.html" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h4>Operation Hope</h4>
@@ -97,6 +160,62 @@
                   <p class="mb-0">Utilized a variety of libraries such as Scikit-Learn and Tensorflow to build complex machine learning models </p>
                 </span>
               </span>
+              <img class="img-fluid" src="images/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Works</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="crypto.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h4>Cryptocurrency Bot</h4>
+                  <p class="mb-0">Applied machine learning algorithms to popular coins</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="oh.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h4>Operation Hope</h4>
+                  <p class="mb-0">Created a whole new website for a non-profit that promotes financial literacy</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="research.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h4>Research</h4>
+                  <p class="mb-0">Led two computer science related research project</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="ml.html">
+              <span class="caption">
+                <span class="caption-content">
+                  <h4>Machine Learning/AI</h4>
+                  <p class="mb-0">Utilized a variety of libraries such as Scikit-Learn and Tensorflow to build complex machine learning models </p>
+                </span>
+              </span>
               <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
             </a>
           </div>
@@ -105,25 +224,12 @@
     </section>
 
 
-
-<!-- About page -->
-	<div class="container">
-	<div class="box-1">  
-	<h1> <div class="h1_css"> Hey, I'm Hasan </div></h1>
-	<p>Hasan is studying Computer Science as an undergraduate at Georgia State University, class of 2021. Aiming to get into Artificial Intelligence business growth as he is already working on some projects. His initial goal is to obtain an internship. He is selected for the Dean's List thrice and is in Honors college.</p>
-	</div>
-	<div class="box-2">  
-	<h1>Hello World</h1>
-	<p>Feel free to contact me :) <br> Ba bye!</br></p>
-		<a href="pages/page_2.html" class = "button" title="See the Magic"> Learn More</a>
-		</div>
-
 		<div class="categories">
 			<h2><div class="goals"> Future Goals </h2>
 			<ul>
 				<li><a href="#">Work on YouTube motivational videos</a></li>
 				<li><a href="#">Create Apps using Machine Learning</a></li>
-				<li><a href="#">Making good Money</a></li>
+				<li><a href="#">Making good Money/Living Smart</a></li>
 				<li><a href="#">Publishing my Website </a></li>
 
 			</ul>
@@ -176,7 +282,7 @@
 
     <!-- Form Webpage -->
 
-			<form class="my-form">
+<!-- 			<form class="my-form">
 			<div class = "form-group">
 				<label>Name: </label>
 				<input type="text" name = "name">
@@ -194,11 +300,68 @@
 		</form>
 		 </div>
 
-	</div> <!-- ./container -->
+	</div>  -->
+
+  <!-- ./container -->
 
 	<div style= "margin-top: 60px;"> </div>
 
-	<p class="text-muted" style="text-align: center">Copyright &copy; Proudly Powered by Me</p>
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p2>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p2>
+          <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+          <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+          <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+          <form name="sentMessage" novalidate>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name." style="background-color: #CCBD96; border-radius: 30px; text-align: center">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address." style="background-color: #fff4d6;border-radius: 30px; text-align: center">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+              <label>Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number." style="background-color: #fff4d6; border-radius: 30px; text-align: center">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Message</label>
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." style="background-color: #fff4d6; border-radius: 30px; text-align: center"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+            </div>
+          </form>
+      <button class="btn btn-primary" id="sendMessageButton" onclick="clicked()">Send!</button>
+        </div>
+      </div>
+    </div>
+
+<hr>
+    <!-- Footer -->
+    <footer>
+      <div align= middle>
+        <iframe width="200" height="100" src="https://lottiefiles.com/iframe/2519-maps" frameborder="0" ></iframe>
+      </div>
+            <p class="text-muted" style="text-align: center">Copyright &copy; Proudly Powered by Me</p>
+          </div>
+    </footer>
 
 </body>
 </html>
